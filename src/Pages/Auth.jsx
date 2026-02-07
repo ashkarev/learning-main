@@ -181,6 +181,10 @@ const Auth = ({ insideRegister }) => {
               onSuccess={(credentialresponse) => {
                 googleClick(credentialresponse)
               }}
+              onError={() => {
+                console.log("Login Failed");
+                toast.error("Google Login Failed");
+              }}
               theme="outline"
               shape="circle"
               size="large"
