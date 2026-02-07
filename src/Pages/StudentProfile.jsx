@@ -1,4 +1,4 @@
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { ChartContainer } from "@/Components/ui/chart";
 
 import React, { useContext, useEffect, useState } from "react";
@@ -349,27 +349,37 @@ const StudentProfile = () => {
                         <h3 className="text-lg font-bold text-gray-800 mb-6 pl-2 border-l-4 border-blue-500">
                             Weekly Activity
                         </h3>
-                        <ChartContainer className="w-full h-[300px]">
-                            <BarChart
-                                data={chartData}
-                                margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
-                            >
-                                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                                <XAxis
-                                    dataKey="Day"
-                                    stroke="#9ca3af"
-                                    fontSize={12}
-                                    tickLine={false}
-                                    axisLine={false}
-                                />
-                                <Bar
-                                    dataKey="time"
-                                    fill="#3b82f6"
-                                    radius={[6, 6, 0, 0]}
-                                    barSize={40}
-                                />
-                            </BarChart>
-                        </ChartContainer>
+                        <div className="w-full h-[300px]">
+                            <ChartContainer className="w-full h-full">
+                                <BarChart
+                                    data={chartData}
+                                    width={500}
+                                    height={300}
+                                    margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
+                                >
+                                    <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                                    <XAxis
+                                        dataKey="Day"
+                                        stroke="#9ca3af"
+                                        fontSize={12}
+                                        tickLine={false}
+                                        axisLine={false}
+                                    />
+                                    <YAxis
+                                        stroke="#9ca3af"
+                                        fontSize={12}
+                                        tickLine={false}
+                                        axisLine={false}
+                                    />
+                                    <Bar
+                                        dataKey="time"
+                                        fill="#3b82f6"
+                                        radius={[6, 6, 0, 0]}
+                                        barSize={40}
+                                    />
+                                </BarChart>
+                            </ChartContainer>
+                        </div>
                     </div>
 
                     <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100">

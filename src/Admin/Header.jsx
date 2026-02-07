@@ -1,11 +1,17 @@
 
 import React from 'react';
-import { User } from 'lucide-react';
+import { User, Menu } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ onMenuClick }) => {
     return (
         <header className="flex items-center justify-between h-16 bg-white border-b border-gray-200 px-4 md:px-6 shadow-sm z-10">
-            <div className="flex items-center">
+            <div className="flex items-center gap-4">
+                <button
+                    onClick={onMenuClick}
+                    className="lg:hidden text-gray-600 hover:text-gray-900 focus:outline-none"
+                >
+                    <Menu className="h-6 w-6" />
+                </button>
                 <div className="relative">
                     <h1 className="text-lg md:text-xl font-semibold text-gray-800">Welcome Admin</h1>
                 </div>

@@ -131,19 +131,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Fix Flowbite Carousel height issues */
-.hero-carousel-container>div,
-.hero-carousel-container>div>div,
-.hero-carousel-container>div>div>div {
-  height: 100% !important;
-}
-
-.hero-carousel-container img {
-  height: 100% !important;
-  width: 100% !important;
-  object-fit: cover !important;
-}
-
 /* force dropdown menu white */
 [data-testid="flowbite-dropdown"] {
   background-color: white !important;

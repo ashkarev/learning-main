@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Users, BookOpen, Settings, LogOut, Briefcase } from 'lucide-react';
+import { LayoutDashboard, Users, BookOpen, Settings, LogOut, Briefcase, X } from 'lucide-react';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
     const location = useLocation();
 
     const navigation = [
@@ -16,10 +16,25 @@ const Sidebar = () => {
 
     return (
         <>
+            {/* Mobile backdrop */}
+            {isOpen && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+                    onClick={onClose}
+                />
+            )}
+
             {/* Sidebar */}
-            <div className="w-64 bg-white border-r border-gray-200 h-full flex flex-col">
-                <div className="flex items-center justify-center h-16 border-b border-gray-200">
+            <div className={`${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 fixed lg:static inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 h-full flex flex-col transition-transform duration-300 ease-in-out`}>
+                <div className="flex items-center justify-between h-16 border-b border-gray-200 px-4">
                     <h1 className="text-2xl font-bold text-blue-600">AdminPanel</h1>
+                    {/* Close button for mobile */}
+                    <button
+                        onClick={onClose}
+                        className="lg:hidden text-gray-500 hover:text-gray-700"
+                    >
+                        <X className="h-6 w-6" />
+                    </button>
                 </div>
                 <div className="flex-1 flex flex-col overflow-y-auto py-4">
                     <nav className="flex-1 px-2 space-y-1">
@@ -29,6 +44,7 @@ const Sidebar = () => {
                                 <Link
                                     key={item.name}
                                     to={item.href}
+                                    onClick={() => onClose()} // Close sidebar on mobile when clicking a link
                                     className={`group flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors duration-150 ease-in-out
                       ${isActive
                                             ? 'bg-blue-50 text-blue-600'

@@ -17,30 +17,30 @@ const About = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-sky-50">
-        <div className="grid grid-cols-2 gap-10  mx-20 text-center">
-          <div className="my-52">
-            <h1 className="text-4xl text-blue-500 font-bold">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 px-4 sm:px-8 lg:px-20 text-center">
+          <div className="my-12 sm:my-24 lg:my-52">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl text-blue-500 font-bold mt-20">
               About Our Learning Platform
             </h1>
-            <p className="my-10 text-gray-600">
+            <p className="my-6 lg:my-10 text-gray-600 text-sm sm:text-base">
               Empowering students worldwide to unlock their potential through
               accessible, high-quality education. Join thousands who are
               transforming their careers and achieving their dreams.
             </p>
           </div>
-          <div className="my-52">
-            <img className="rounded-2xl" src={about1} alt="" />
+          <div className="my-12 sm:my-24 lg:my-52">
+            <img className="rounded-2xl w-full h-auto object-cover" src={about1} alt="About Learning Platform" />
           </div>
         </div>
       </div>
       {/* misssomm */}
 
-      <div className="min-h-screen bg-gray-50 flex justify-center items-start py-16">
-        <div className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-10">
-          <h1 className="text-4xl text-blue-500 font-bold text-center my-12">
+      <div className="min-h-screen bg-gray-50 flex justify-center items-start py-8 sm:py-12 lg:py-16 px-4">
+        <div className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10">
+          <h1 className="text-3xl sm:text-4xl text-blue-500 font-bold text-center my-8 lg:my-12">
             Our Mission & Vision
           </h1>
-          <p className=" text-gray-700 leading-relaxed text-justify">
+          <p className="text-gray-700 leading-relaxed text-justify text-sm sm:text-base mb-4">
             At our core, we believe that quality education should be accessible
             to everyone, regardless of their background or circumstances. Our
             mission is to democratize learning by providing world-class courses
@@ -49,7 +49,7 @@ const About = () => {
             global community of learners who support and inspire each other.
           </p>
 
-          <p className=" text-gray-700 leading-relaxed text-justify">
+          <p className="text-gray-700 leading-relaxed text-justify text-sm sm:text-base">
             Our vision is to create a future where continuous learning is
             seamlessly integrated into everyday life. Through innovative
             technology, engaging content, and expert instruction, we aim to
@@ -63,16 +63,16 @@ const About = () => {
 
       {/* impact */}
 
-      <div className="bg-sky-50 min-h-screen">
-        <h1 className="text-4xl text-blue-500 font-bold text-center  ">
+      <div className="bg-sky-50 min-h-screen py-8 sm:py-12 lg:py-16">
+        <h1 className="text-3xl sm:text-4xl text-blue-500 font-bold text-center px-4">
           Our Impact in Numbers
         </h1>
 
-        <div className="my-10">
-          <div className="max-w-6xl mx-auto my-20 px-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 my-20">
+        <div className="my-6 sm:my-10">
+          <div className="max-w-6xl mx-auto my-10 sm:my-16 lg:my-20 px-4 sm:px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
               <div className="bg-white rounded-2xl hover:scale-105 transition duration-200 shadow-sm p-6 ">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex  items-center justify-center mx-19  my-2">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mx-auto my-2">
                   <FaPeopleRobbery className="text-4xl text-blue-600" />
                 </div>
 
@@ -85,7 +85,7 @@ const About = () => {
               </div>
 
               <div className="bg-white rounded-2xl hover:scale-105 transition duration-200 shadow-sm p-6  ">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex  items-center justify-center mx-19 my-2">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mx-auto my-2">
                   <LiaBookSolid className="text-4xl text-blue-600 " />
                 </div>
 
@@ -98,7 +98,7 @@ const About = () => {
               </div>
 
               <div className="bg-white rounded-2xl hover:scale-105 transition duration-200  shadow-sm p-6">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mb-3 mx-19 my-2">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mb-3 mx-auto my-2">
                   <PiStudentDuotone className="text-4xl text-blue-600" />
                 </div>
 
@@ -111,7 +111,7 @@ const About = () => {
               </div>
 
               <div className="bg-white rounded-2xl hover:scale-105 transition duration-200 shadow-sm p-6">
-                <div className="w-10 h-10 rounded-full bg-blue-50  flex items-center justify-center mb-3 mx-19 my-2">
+                <div className="w-10 h-10 rounded-full bg-blue-50  flex items-center justify-center mb-3 mx-auto my-2">
                   <GrCertificate className="text-4xl text-blue-600" />
                 </div>
 
@@ -128,123 +128,123 @@ const About = () => {
       </div>
 
       {/* team section */}
-      <div className="min-h-screen ">
-        <div className="text-center my-10">
-          <h1 className="text-4xl text-blue-500 font-bold">Meet Our Team</h1>
-          <p className="my-10 text-gray-600">
+      <div className="min-h-screen py-8 sm:py-12 lg:py-16 px-4">
+        <div className="text-center my-6 sm:my-10">
+          <h1 className="text-3xl sm:text-4xl text-blue-500 font-bold">Meet Our Team</h1>
+          <p className="my-6 lg:my-10 text-gray-600 text-sm sm:text-base max-w-3xl mx-auto">
             Passionate educators and innovators dedicated to transforming the
             future of online learning
           </p>
         </div>
-        <div className=" grid grid-cols-4 gap-6 mx-10 my-20">
-              <div className="bg-white rounded-2xl shadow-lg p-6 text-center flex flex-col  items-center gap-6 w-full max-w-xl hover:scale-105 duration-700">
-          <img
-            src={me}
-            alt="profile"
-            className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-lg p-6 text-center flex flex-col items-center gap-4 hover:scale-105 duration-300 transition-transform">
+            <img
+              src={me}
+              alt="Ashkar S profile"
+              className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
+            />
 
-          <div>
-            <h2 className="text-xl font-semibold text-blue-500">Ashkar S</h2>
+            <div>
+              <h2 className="text-xl font-semibold text-blue-500">Ashkar S</h2>
 
-            <a href="#" className="text-sm hover:underline">
-              Founder & CEO
-            </a>
+              <p className="text-sm text-gray-600 font-medium">
+                Founder & CEO
+              </p>
 
-            <p className="text-gray-500 text-sm mt-1">
-              Visionary leader with 1 years in this field
-            </p>
+              <p className="text-gray-500 text-sm mt-2">
+                Visionary leader with 1 years in this field
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-4 text-center hover:scale-105 duration-300 transition-transform">
+            <img
+              src={two}
+              alt="Gwen profile"
+              className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
+            />
+
+            <div>
+              <h2 className="text-xl font-semibold text-blue-500">Gwen</h2>
+
+              <p className="text-sm text-gray-600 font-medium">
+                Chief Technology Officer
+              </p>
+
+              <p className="text-gray-500 text-sm mt-2">
+                Building innovative learning solutions
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-4 text-center hover:scale-105 duration-300 transition-transform">
+            <img
+              src={three}
+              alt="Miles profile"
+              className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
+            />
+
+            <div>
+              <h2 className="text-xl font-semibold text-blue-500">Miles</h2>
+
+              <p className="text-sm text-gray-600 font-medium">
+                Head of Content
+              </p>
+
+              <p className="text-gray-500 text-sm mt-2">
+                Curating world-class educational content
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-4 text-center hover:scale-105 duration-300 transition-transform">
+            <img
+              src={four}
+              alt="Mary profile"
+              className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
+            />
+
+            <div>
+              <h2 className="text-xl font-semibold text-blue-500">Mary</h2>
+
+              <p className="text-sm text-gray-600 font-medium">
+                Head of Student Success
+              </p>
+
+              <p className="text-gray-500 text-sm mt-2">
+                Ensuring every learner achieves their goals
+              </p>
+            </div>
           </div>
         </div>
-         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-6 w-full max-w-xl text-center hover:scale-105 duration-700">
-          <img
-            src={two}
-            alt="profile"
-            className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
-          />
 
-          <div>
-            <h2 className="text-xl font-semibold  text-blue-500">gwen</h2>
 
-            <a href="#" className=" text-sm hover:underline">
-             Chief Technology Officer
-            </a>
-
-            <p className="text-gray-500 text-sm mt-1">
-             Building innovative learning solutions
-            </p>
-          </div>
-        </div>
-         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-6 w-full max-w-xl text-center hover:scale-105 duration-700">
-          <img
-            src={three}
-            alt="profile"
-            className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
-          />
-
-          <div>
-            <h2 className="text-xl font-semibold text-blue-500">miles</h2>
-
-            <a href="#" className=" text-sm hover:underline">
-             Head of Content
-            </a>
-
-            <p className="text-gray-500 text-sm mt-1">
-              Curating world-class educational content
-            </p>
-          </div>
-        </div>
-         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-6 w-full max-w-xl text-center hover:scale-105 duration-700">
-          <img
-            src={four}
-            alt="profile"
-            className="w-24 h-24 rounded-full object-cover border-4 border-white shadow"
-          />
-
-          <div>
-            <h2 className="text-xl font-semibold text-blue-500">mary</h2>
-
-            <a href="#" className=" text-sm hover:underline">
-             Head of Student Success
-            </a>
-
-            <p className="text-gray-500 text-sm mt-1">
-              Ensuring every learner achieves their goals
-            </p>
-          </div>
-        </div>
-        </div>
-
-      
       </div>
       {/* last */}
 
       <div>
-         <div className="min-h-screen bg-gray-50 my-[-100px] flex justify-center items-start py-16">
-        <div className="max-w-4xl w-full bg-sky-50 rounded-2xl shadow-lg p-10">
-          <h1 className="text-4xl text-blue-500 font-bold text-center my-12">
-            We believe learning should be accessible to everyone
-          </h1>
-          <p className=" text-gray-700 leading-relaxed text-xl text-center">
-            Join our community of learners and start your journey towards success today
-          </p>
-          <div className="flex justify-center my-7">
-            <Link to={'/register'}>
-              <button className="border mx-6 p-2  rounded-md bg-blue-800 text-white hover:text-white hover:bg-blue-500">
-          Get Started
-        </button>
-            </Link>
+        <div className="min-h-screen bg-gray-50 my-0 flex justify-center items-start py-8 sm:py-12 lg:py-16 px-4">
+          <div className="max-w-4xl w-full bg-sky-50 rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl text-blue-500 font-bold text-center my-8 lg:my-12">
+              We believe learning should be accessible to everyone
+            </h1>
+            <p className="text-gray-700 leading-relaxed text-base sm:text-lg lg:text-xl text-center">
+              Join our community of learners and start your journey towards success today
+            </p>
+            <div className="flex justify-center my-6 lg:my-7">
+              <Link to={'/register'}>
+                <button className="border mx-6 px-6 py-3 rounded-md bg-blue-800 text-white hover:text-white hover:bg-blue-500 transition-colors">
+                  Get Started
+                </button>
+              </Link>
 
 
-            
+
+            </div>
+
+
           </div>
-
-       
         </div>
       </div>
-      </div>
-<Footer />
-    
+      <Footer />
+
 
 
     </>
