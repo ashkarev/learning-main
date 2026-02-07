@@ -1,1 +1,1 @@
-export const baseUrl=' https:/lms-be-3.onrender.com'
+export const baseUrl='https://lms-be-3.onrender.com'
